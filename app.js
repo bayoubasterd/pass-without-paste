@@ -39,6 +39,19 @@
     const reportLink = document.getElementById("report-link");
     if (release.reportUrl) enableLink(reportLink, "Report your findings", release.reportUrl);
     else disableLink(reportLink, "Reporting not yet open");
+
+    const signupLink = document.getElementById("signup-link");
+    const signupNote = document.getElementById("signup-note");
+    if (release.signupStatus === "open" && release.signupUrl) {
+      enableLink(signupLink, "Alpha Sign-Up", release.signupUrl);
+      signupNote.textContent = release.signupMessage || "Alpha signups are open.";
+    } else if (release.signupStatus === "closed") {
+      disableLink(signupLink, "Alpha Sign-Up");
+      signupNote.textContent = "Signup window has closed (for now)";
+    } else {
+      disableLink(signupLink, "Alpha Sign-Up");
+      signupNote.textContent = "Signups coming soon.";
+    }
   } catch (_) {
     document.getElementById("current-version").textContent = "Version notice unavailable";
     document.getElementById("release-message").textContent = "Please use the version supplied with your invitation and check back later.";
