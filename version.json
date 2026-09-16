@@ -1,8 +1,8 @@
 {
-  "currentVersion": "0.7.0",
+  "currentVersion": "0.0.71",
   "channel": "Closed alpha",
-  "message": "Turbo Mode is ready for the next controlled testing round.",
+  "message": "Fast Base Import is ready for the next controlled testing round.",
   "downloadUrl": "",
   "reportUrl": "",
-  "checksum": "9B34B159BD71580CDFC3B4C3956739C100A92E0D03B5F3C546B08771D623F692"
+  "checksum": "3B36F436A9FA7C4035922261EFAD4E55729F037ADDA982E79F053E99FF99E431"
 }
