@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="Pass Without Paste alpha tester portal.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; object-src 'none'; upgrade-insecure-requests">
+  <title>Pass Without Paste — Alpha Testing</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to tester information</a>
+  <header class="site-header">
+    <div class="brand-mark" aria-hidden="true">PW</div>
+    <div>
+      <p class="eyebrow">Invitation-only alpha</p>
+      <h1>Pass Without Paste</h1>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="release-banner" aria-labelledby="release-title">
+      <div>
+        <p class="eyebrow">Current tester build</p>
+        <h2 id="release-title"><span id="current-version">Checking version…</span></h2>
+        <p id="release-message">Take your character wherever the adventure leads. Less copying, more adventuring.</p>
+      </div>
+      <span class="release-state" id="release-state">Alpha</span>
+    </section>
+
+    <section class="action-grid" aria-label="Tester actions">
+      <article class="action-card action-card-primary">
+        <p class="step-number">01</p>
+        <h2>Get the current build</h2>
+        <p>Use the private download supplied with your invitation. Keep the extracted folder in place after installing it.</p>
+        <a class="button" id="download-link" href="#" aria-disabled="true">Download not yet open</a>
+        <p class="small" id="download-note">The download will appear here once the private release is secured.</p>
+      </article>
+
+      <article class="action-card">
+        <p class="step-number">02</p>
+        <h2>Install or update</h2>
+        <ol>
+          <li>Extract the downloaded ZIP into a permanent folder.</li>
+          <li>Open <code>chrome://extensions</code> and turn on Developer mode.</li>
+          <li>Choose <strong>Load unpacked</strong> and select that folder.</li>
+          <li>For later updates, replace the folder contents and click <strong>Reload</strong>.</li>
+        </ol>
+      </article>
+
+      <article class="action-card">
+        <p class="step-number">03</p>
+        <h2>Report what happened</h2>
+        <p>One report gives us the import summary. Separate issue entries help us fix each individual miss.</p>
+        <a class="button button-secondary" id="report-link" href="#" aria-disabled="true">Reporting not yet open</a>
+        <p class="small">Reports are kept out of the public repository.</p>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel">
+        <h2>What to include</h2>
+        <ul class="check-list">
+          <li>A screenshot of the final import summary</li>
+          <li>Your class, subclass, and relevant levels</li>
+          <li>Anything unusual that did not make it through</li>
+          <li>How seriously each miss affected the character</li>
+          <li>An optional screen name if follow-up is okay</li>
+        </ul>
+        <p>You may attach a file instead and let us work through it on our side.</p>
+      </article>
+
+      <article class="panel">
+        <h2>What happens after you start</h2>
+        <p>Once the import begins, you do not need to sit and watch it unless you want to. You can use another browser tab while it continues in the background.</p>
+        <p>Issues are handled by impact and urgency rather than strictly by submission time.</p>
+      </article>
+
+      <article class="panel security-panel">
+        <h2>Your privacy</h2>
+        <p>This public page does not collect names, analytics, character data, or browser activity.</p>
+        <p>Never include passwords, account recovery information, private messages, or anything you do not want the testing team to review.</p>
+      </article>
+    </section>
+
+    <section class="update-panel" aria-labelledby="update-heading">
+      <div>
+        <p class="eyebrow">Updates</p>
+        <h2 id="update-heading">You will know when a newer build is ready.</h2>
+      </div>
+      <p>The installed tool will compare its version with this page’s current-version notice. When a newer build is available, it will point you back here for the update.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Thank you for helping make this possible.</p>
+    <p class="signature">-XANTHIAS-</p>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
