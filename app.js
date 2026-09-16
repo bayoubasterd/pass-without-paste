@@ -43,13 +43,13 @@
     const signupLink = document.getElementById("signup-link");
     const signupNote = document.getElementById("signup-note");
     if (release.signupStatus === "open" && release.signupUrl) {
-      enableLink(signupLink, "Alpha Sign-Up", release.signupUrl);
+      enableLink(signupLink, "Sign up to participate in the Closed Alpha:", release.signupUrl);
       signupNote.textContent = release.signupMessage || "Alpha signups are open.";
     } else if (release.signupStatus === "closed") {
-      disableLink(signupLink, "Alpha Sign-Up");
+      disableLink(signupLink, "Sign up to participate in the Closed Alpha:");
       signupNote.textContent = "Signup window has closed (for now)";
     } else {
-      disableLink(signupLink, "Alpha Sign-Up");
+      disableLink(signupLink, "Sign up to participate in the Closed Alpha:");
       signupNote.textContent = "Signups coming soon.";
     }
   } catch (_) {
