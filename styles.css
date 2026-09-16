@@ -59,15 +59,10 @@ footer {
 }
 
 .brand-mark {
-  display: grid;
-  place-items: center;
-  width: 3.2rem;
-  aspect-ratio: 1;
-  border: 1px solid var(--silver);
-  color: var(--silver);
-  background: #12161c;
-  font-weight: 800;
-  letter-spacing: -.08em;
+  display: block;
+  width: clamp(5.25rem, 10vw, 6.5rem);
+  height: auto;
+  flex: none;
 }
 
 h1,
